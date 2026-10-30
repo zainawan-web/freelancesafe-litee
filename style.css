@@ -1,0 +1,529 @@
+
+/* =================================
+   1. BASIC SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #17243a;
+}
+
+/* =================================
+   2. HEADER AND NAVIGATION
+================================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #10233f;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #27c6a5;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #27c6a5;
+}
+
+/* =================================
+   3. REGISTRATION SECTION
+================================= */
+
+.auth-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 60px 8%;
+}
+
+/* Left side information */
+
+.auth-info {
+    flex: 1;
+    max-width: 520px;
+}
+
+.tagline {
+    color: #159b83;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.auth-info h1 {
+    font-size: 43px;
+    line-height: 1.2;
+    color: #10233f;
+    margin-bottom: 22px;
+}
+
+.auth-info > p:not(.tagline) {
+    color: #68758a;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.benefit {
+    margin: 18px 0;
+    color: #33435a;
+    font-size: 15px;
+}
+
+.benefit span {
+    color: #159b83;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* =================================
+   4. REGISTRATION FORM CARD
+================================= */
+
+.form-card {
+    width: 100%;
+    max-width: 440px;
+    background: white;
+    padding: 38px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(16, 35, 63, 0.10);
+}
+
+.form-card h2 {
+    color: #10233f;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    color: #7b8798;
+    margin-bottom: 25px;
+}
+
+/* Form labels */
+
+.form-card label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    color: #26364c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Input fields */
+
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce3ec;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: #fbfcfe;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+    border-color: #159b83;
+    box-shadow: 0 0 0 3px rgba(21, 155, 131, 0.10);
+}
+
+/* Submit button */
+
+.form-button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 7px;
+    background: #159b83;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-button:hover {
+    background: #107c6a;
+    transform: translateY(-2px);
+}
+
+/* Messages */
+
+.form-message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Sign in link */
+
+.form-footer {
+    margin-top: 22px;
+    text-align: center;
+    color: #68758a;
+    font-size: 14px;
+}
+
+.form-footer a {
+    color: #159b83;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* =================================
+   5. FOOTER
+================================= */
+
+.footer {
+    background: #10233f;
+    color: #dce5f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* =================================
+   6. MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
+
+    .auth-section {
+        flex-direction: column;
+        padding: 45px 6%;
+    }
+
+    .auth-info {
+        max-width: 600px;
+    }
+
+    .auth-info h1 {
+        font-size: 35px;
+    }
+
+    .form-card {
+        max-width: 550px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .auth-info h1 {
+        font-size: 29px;
+    }
+
+    .form-card {
+        padding: 25px 20px;
+    }
+}
+
+
+
+
+
+
+
+/* =================================
+   HOME PAGE - HERO SECTION
+================================= */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background: linear-gradient(
+        120deg,
+        #10233f,
+        #173f61,
+        #126e6a
+    );
+    color: white;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero .tagline {
+    color: #55e0c0;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #55e0c0;
+}
+
+.hero-description {
+    max-width: 650px;
+    color: #e0eaf1;
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #27c6a5;
+    color: #10233f;
+}
+
+.primary-button:hover {
+    background: #55e0c0;
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    border: 1px solid white;
+    color: white;
+}
+
+.secondary-button:hover {
+    background: white;
+    color: #10233f;
+}
+
+
+/* =================================
+   HOME PAGE - FEATURES
+================================= */
+
+.features-section {
+    padding: 85px 8%;
+    background: #f4f7fb;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2,
+.about-content h2 {
+    color: #10233f;
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+.section-heading > p:not(.tagline) {
+    color: #68758a;
+    line-height: 1.7;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(16, 35, 63, 0.07);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(16, 35, 63, 0.12);
+}
+
+.feature-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #10233f;
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.feature-card p {
+    color: #68758a;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   HOME PAGE - ABOUT
+================================= */
+
+.about-section {
+    padding: 85px 8%;
+    background: white;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-content p:not(.tagline) {
+    color: #68758a;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+/* =================================
+   HOME PAGE - CTA
+================================= */
+
+.cta-section {
+    padding: 75px 8%;
+    text-align: center;
+    background: #eaf7f4;
+}
+
+.cta-section h2 {
+    color: #10233f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    color: #68758a;
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   HOME PAGE - RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .features-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+    .cta-section h2 {
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+
+/* =================================
+   CONTACT PAGE
+================================= */
+
+.form-card textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce3ec;
+    border-radius: 7px;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: #fbfcfe;
+    resize: vertical;
+}
+
+.form-card textarea:focus {
+    border-color: #159b83;
+    box-shadow: 0 0 0 3px rgba(21, 155, 131, 0.10);
+}
+
+.form-card textarea::placeholder {
+    color: #9aa5b3;
+}

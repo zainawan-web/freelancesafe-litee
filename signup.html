@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | FreelanceSafe Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="signup.html" class="logo">FreelanceSafe<span> Lite</span></a>
+        <nav class="navbar">
+            <a href="signup.html">Register</a>
+            <a href="login.html">Sign In</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="auth-section">
+
+        <div class="auth-info">
+            <p class="tagline">WELCOME TO FREELANCESAFE LITE</p>
+            <h1>Work with confidence. Get paid with protection.</h1>
+            <p>
+                Create your account and experience safer freelance
+                transactions with escrow protection, risk scoring
+                and dispute resolution.
+            </p>
+
+            <div class="benefit">
+                <span>✓</span> Secure milestone-based payments
+            </div>
+
+            <div class="benefit">
+                <span>✓</span> Smart project risk assessment
+            </div>
+
+            <div class="benefit">
+                <span>✓</span> Fair dispute resolution
+            </div>
+        </div>
+
+        <div class="form-card">
+
+            <h2>Create Your Account</h2>
+            <p class="form-description">
+                Join FreelanceSafe Lite today.
+            </p>
+
+            <form id="signupForm">
+
+                <label for="fullName">Full Name</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    minlength="3"
+                    maxlength="60"
+                    required
+                >
+
+                <label for="signupEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="example@email.com"
+                    required
+                >
+
+                <label for="signupPassword">Password</label>
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="At least 8 characters"
+                    minlength="8"
+                    required
+                >
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Enter your password again"
+                    minlength="8"
+                    required
+                >
+
+                <label for="userType">Account Type</label>
+                <select id="userType" required>
+                    <option value="">Select account type</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="client">Client</option>
+                </select>
+
+                <button type="submit" class="form-button">
+                    Create Account
+                </button>
+
+                <p id="signupMessage" class="form-message"
+                   aria-live="polite"></p>
+
+            </form>
+
+            <p class="form-footer">
+                Already have an account?
+                <a href="login.html">Sign In</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 FreelanceSafe Lite. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
